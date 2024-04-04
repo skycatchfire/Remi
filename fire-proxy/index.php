@@ -1,7 +1,7 @@
 <?php
 /**
 * Plugin Name: Fire Image Proxy
-* Plugin URI: https://github.com/skycatchfire/fire-image-proxy
+* Plugin URI: https://github.com/skycatchfire/Fire-Image-Proxy/
 * Description: Proxy images from a live site to a local site. Save bandwidth and speed up development.
 * Version: 0.1
 * Author: SKYCATCHFIRE
