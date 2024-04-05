@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: new URLSearchParams({
-        action: 'download_image',
+        action: 'remi_remote_image',
         src,
       }),
     })
@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
       .then((data) => {
         if (data.swapped) {
           img.setAttribute('src', data.swapped);
-          console.log('Proxied: ', data.swapped);
+          console.log('Remi Swapped: ', data.swapped);
         }
         if (data.downloaded) {
-          console.log('Downloaded: ', data.downloaded);
+          console.log('Remi Downloaded: ', data.downloaded);
         }
       })
       .catch((error) => console.error('Error:', error));
