@@ -6,7 +6,7 @@ Fire Image Proxy is a WordPress plugin designed to streamline your local develop
 
 - **URL Swapping**: Fire Image Proxy can replace the URLs of your images, by changing the `<img>` src to point to the live url instead of your local url. This is particularly useful when your website has a lot of images and downloading them in bulk takes a long time.
 
-- **Selective Downloading**: Instead of downloading all images from your live site, Fire Image Proxy allows you to download only the images you need for your local development. This can significantly speed up your setup process and save disk space. On page load Your `<img>` scr will be swapped to your live url but the image will also be downloaded to your local sites uploads folder. On the next page reload you will be served your newly downloaded files instantly.
+- **Selective Downloading**: Instead of downloading all images from your live site, Fire Image Proxy allows you to download only the images you need for your local development. This can significantly speed up your setup process and save disk space. On page load Your `<img>` src will be swapped to your live url but the image will also be downloaded to your local sites uploads folder. On the next page reload you will be served your newly downloaded files instantly.
 
 ## How to Use
 
