@@ -1,7 +1,7 @@
 <?php
 /**
 * Plugin Name: Remi
-* Plugin URI: https://github.com/skycatchfire/remi/
+* Plugin URI: https://github.com/skycatchfire/Remi/
 * Description: Display remote images from a live site while working locally. Save bandwidth and speed up development.
 * Version: 1.0
 * Author: SKYCATCHFIRE
