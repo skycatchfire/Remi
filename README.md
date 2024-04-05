@@ -1,12 +1,12 @@
-# Fire-Image-Proxy
+# Fire Image Proxy
 
-Fire-Image-Proxy is a WordPress plugin designed to streamline your local development process. It works by swapping the URLs of your images, making it easier to work with your local setup.
+Fire Image Proxy is a WordPress plugin designed to streamline your local development process. It works by swapping the URLs of your images, making it easier to work with your local setup.
 
 ## Features
 
-- **URL Swapping**: Fire-Image-Proxy can replace the URLs of your images, pointing them to your local setup instead of the live site. This is particularly useful when you're working offline or when you want to reduce the load on your live server.
+- **URL Swapping**: Fire Image Proxy can replace the URLs of your images, pointing them to your local setup instead of the live site. This is particularly useful when you're working offline or when you want to reduce the load on your live server.
 
-- **Selective Downloading**: Instead of downloading all images from your live site, Fire-Image-Proxy allows you to download only the images you need for your local development. This can significantly speed up your setup process and save disk space.
+- **Selective Downloading**: Instead of downloading all images from your live site, Fire Image Proxy allows you to download only the images you need for your local development. This can significantly speed up your setup process and save disk space.
 
 ## How to Use
 
@@ -27,8 +27,8 @@ We welcome contributions from the community. If you'd like to contribute, please
 
 ## Author
 
-This plugin is developed by [SkyCatchFire](https://www.skycatchfire.com/)..
+This plugin is developed by [SKYCATCHFIRE](https://www.skycatchfire.com/).
 
 ## License
 
-Fire-Image-Proxy is open-source software licensed under the MIT license.
+Fire Image Proxy is open-source software licensed under the MIT license.
