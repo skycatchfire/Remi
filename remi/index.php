@@ -32,17 +32,28 @@ function remi_settings_page() {
   );
 }
 
-add_action('admin_notices', 'show_updated_message');
-function show_updated_message() {
-    // Check if we're on the options page
-    if (isset($_GET['page']) && $_GET['page'] == 'remi-settings') {
-      ?>
-      <div class="updated notice is-dismissible">
-          <p><?php _e('The settings were updated!', 'text-domain'); ?></p>
-      </div>
-      <?php
-    }
+function remi_show_updated_message() {
+  // Check if we're on the options page and the form was submitted
+  if (isset($_GET['page']) && $_GET['page'] == 'remi-settings' && get_option('remi_form_submitted')) {
+    // Display the message
+    ?>
+    <div class="updated notice is-dismissible">
+      <p><?php _e('The settings were updated!', 'text-domain'); ?></p>
+    </div>
+    <?php
+
+    // Reset the option
+    update_option('remi_form_submitted', false);
+  }
 }
+add_action('admin_notices', 'remi_show_updated_message');
+
+function update_remi_form_submitted() {
+  if (isset($_POST['remi_form_submitted'])) {
+    update_option('remi_form_submitted', true);
+  }
+}
+add_action('admin_init', 'update_remi_form_submitted');
 
 function remi_settings_page_html() {
   // check user capabilities
@@ -161,7 +172,11 @@ function remi_settings_page_html() {
       do_settings_sections('remi-settings');
 
       // output save settings button
-      submit_button('Save Settings');
+      // output save settings button
+      echo '<p class="submit"><input type="submit" name="remi_submit" id="submit" class="button button-primary" value="Save Settings"></p>';
+
+      // Add a hidden field
+      echo '<input type="hidden" name="remi_form_submitted" value="true">';
       ?>
     </form>
   </div>
