@@ -33,4 +33,4 @@ This plugin is developed by [SKYCATCHFIRE](https://www.skycatchfire.com/).
 
 Remi is open-source software licensed under the MIT license.
 
-### In loving memory of a fluffy cat sized dog.
+_In loving memory of a fluffy cat sized dog._
