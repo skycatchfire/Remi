@@ -242,8 +242,12 @@ function remi_settings_init() {
 }
 
 $options = get_option('remi_settings');
-define( 'REMI_REMOTE_URL', $options['remi_url'] );
-define( 'REMI_LOCAL_URL', $options['local_url'] );
+if (isset($options['remi_url'])) {
+  define('REMI_REMOTE_URL', $options['remi_url']);
+}
+if (isset($options['local_url'])) {
+  define('REMI_LOCAL_URL', $options['local_url']);
+}
 define( 'REMI_ACTIVE', isset($options['remi_active']) );
 define( 'REMI_DOWNLOAD', isset($options['remi_download']) );
 
