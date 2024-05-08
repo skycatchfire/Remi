@@ -14,7 +14,7 @@ Remi is a WordPress plugin designed to streamline the local development process.
 2. Navigate to the Remi settings page under Tools.
 3. Specify the live site URL and the local site URL.
 4. Enable remote image swapping. The plugin and it will start swapping the URLs of the images.
-5. Enable remote image downloading and the plugin will start downloading the remote images to the local uploads directory. On the next page load it will use the local images that have been downloaded instead of the remote URL.
+5. Enable remote image downloading and the plugin will start downloading the remote images to the local uploads directory. On the next page load your site will use the local images that have been downloaded instead of the remote URL.
 
 ## Requirements
 
