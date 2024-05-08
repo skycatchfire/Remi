@@ -1,6 +1,6 @@
 # Remi 🐕 - Remote Image
 
-Remi is a WordPress plugin designed to streamline the local development process. It works by swapping the URLs of the images, making it easier to work locally by loading the images from the live URL.
+Remi is a WordPress plugin designed to streamline the local development process. It works by swapping the URLs of the images, making it easier to work locally by loading the images from the production URL.
 
 ## Features
 
